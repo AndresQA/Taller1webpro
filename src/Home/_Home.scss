@@ -1,0 +1,19 @@
+.Homescreen{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/backgroundstart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Homescreen__startbtn{
+    width: 280px;
+    height: 100px;
+    margin-bottom: 40px;
+    font-size: 50px;
+
+}

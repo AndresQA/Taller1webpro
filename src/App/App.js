@@ -4,7 +4,9 @@ import Performance from '../Performance/Performance';
 import Basic from '../Basic/Basic';
 import Accessories from '../Accessories/Accessories';
 
-import { HashRouter as Router, Route} from 'react-router-dom';
+
+
+import { HashRouter as Router, Route, Link} from 'react-router-dom';
 
 
 function App() {
@@ -12,8 +14,14 @@ function App() {
     <div className="App">
       
       <Router>
-
+        
+       
+      
       <Route path="/" exact component={Home}/>
+     
+      </Router>
+
+      <Router>
       <Route path="/basic" component={Basic}/>
       <Route path="/accessories" component={Accessories}/>
       <Route path="/performance" component={Performance}/>
