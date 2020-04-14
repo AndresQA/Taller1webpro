@@ -4,9 +4,13 @@ import { Link} from 'react-router-dom';
 
 const Header = () => {
     return <nav>
-        <Link to="/basic">Basic</Link>
-        <Link to="/accessories">accessories</Link>
-        <Link to="/performance">performance</Link>
+        <strong>
+        <div className="Mainnav">
+        <Link to="/basic"> Basic</Link>
+        <Link to="/accessories">Accessories</Link>
+        <Link to="/performance">Performance</Link>
+        </div>
+        </strong> 
     </nav>
 }
 

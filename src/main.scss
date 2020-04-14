@@ -2,13 +2,14 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
   }
   
   code {
@@ -16,11 +17,12 @@ body {
       monospace;
   }
   
-  .backgroundin{
-
-  }
 
 
 @import 'App/App';
 @import 'Home/Home';
 @import 'Basic/Basic';
+@import 'Header/Header';
+@import 'Accessories/Accessories';
+@import 'Preview/Preview';
+@import 'Performance/Performance';

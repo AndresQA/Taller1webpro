@@ -6,7 +6,7 @@ import Accessories from '../Accessories/Accessories';
 
 
 
-import { HashRouter as Router, Route, Link} from 'react-router-dom';
+import { HashRouter as Router, Route} from 'react-router-dom';
 
 
 function App() {

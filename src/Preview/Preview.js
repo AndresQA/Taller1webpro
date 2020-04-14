@@ -1,11 +1,11 @@
 import React from 'react';
+import preview from '../preview.svg';
 
 
 
 const Preview = () => {
-    return <div>
-            <h1>Preview</h1>
-            <img src="/images/example.jpg" alt=""/>
+    return <div className="previewcontent">
+            <img src={preview} className="preview_arm" alt="Preview"/>
     </div>
 }
 
