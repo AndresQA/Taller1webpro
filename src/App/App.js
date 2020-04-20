@@ -9,7 +9,14 @@ import Accessories from '../Accessories/Accessories';
 import { HashRouter as Router, Route} from 'react-router-dom';
 
 
+
 function App() {
+
+  const [ nameGun, setName ] = React.useState('');
+
+
+
+
   return (
     <div className="App">
       
@@ -22,7 +29,7 @@ function App() {
       </Router>
 
       <Router>
-      <Route path="/basic" component={Basic}/>
+      <Route path="/basic" render={() => <Basic nameGun={nameGun} setName={setName}></Basic>}/>
       <Route path="/accessories" component={Accessories}/>
       <Route path="/performance" component={Performance}/>
 

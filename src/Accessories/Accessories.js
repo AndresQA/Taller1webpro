@@ -2,7 +2,18 @@ import React from 'react';
 import Header from '../Header/Header';
 import Preview from '../Preview/Preview';
 
-const Accessories = () => {
+const Accessories = (props) => {
+/*
+    if(props.location.pathname === "/accessories"){
+        document.addEventListener("DOMContentLoaded", function () { 
+            document.querySelector(".accessories").style.color = "red";
+            console.log("hola");
+         });
+    }
+    */
+
+
+
     return <div>
         <Header></Header>
         <div className="container">

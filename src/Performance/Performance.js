@@ -2,7 +2,17 @@ import React from 'react';
 import Header from '../Header/Header';
 import Preview from '../Preview/Preview';
 
-const Performance = () => {
+const Performance = (props) => {
+/*
+    if(props.location.pathname === "/performance"){
+        document.addEventListener("DOMContentLoaded", function () { 
+            document.querySelector(".performance").style.color = "red";
+            console.log("hola");
+         });
+
+    }
+*/
+
     return <div>
         <Header></Header>
         <div className="container">

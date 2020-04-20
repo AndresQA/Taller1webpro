@@ -25,32 +25,38 @@ body{
 }
 
 .item__color{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 .itempos{
     display: flex;
-    width: 200px;
+    width: 280px;
     justify-content: space-around;
+    
 }
 
 .red{
     background-color: red;
+    border: solid 3px white;
 }
 
 .blue{
     background-color: blue;
+    border: solid 3px white;
 }
 
 .gold{
     background-color: gold;
+    border: solid 3px white;
 }
 
 .yellow{
     background-color: yellow;
+    border: solid 3px white;
 }
 
 .white{
     background-color: white;
+    border: solid 3px white;
 }
