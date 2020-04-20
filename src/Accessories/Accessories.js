@@ -1,21 +1,17 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Preview from '../Preview/Preview';
+//import PropTypes from 'prop-types';
+import { HashRouter as Router, Route} from 'react-router-dom';
+
 
 const Accessories = (props) => {
-/*
-    if(props.location.pathname === "/accessories"){
-        document.addEventListener("DOMContentLoaded", function () { 
-            document.querySelector(".accessories").style.color = "red";
-            console.log("hola");
-         });
-    }
-    */
+
 
 
 
     return <div>
-        <Header></Header>
+        <Route component={Header}></Route>
         <div className="container">
             <div className="item">
                 <h3>Sight</h3>

@@ -1,20 +1,14 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Preview from '../Preview/Preview';
+//import PropTypes from 'prop-types';
+import { HashRouter as Router, Route} from 'react-router-dom';
+
 
 const Performance = (props) => {
-/*
-    if(props.location.pathname === "/performance"){
-        document.addEventListener("DOMContentLoaded", function () { 
-            document.querySelector(".performance").style.color = "red";
-            console.log("hola");
-         });
-
-    }
-*/
 
     return <div>
-        <Header></Header>
+        <Route component={Header}></Route>
         <div className="container">
             <div className="item">
                 <h3>Handle</h3>
@@ -30,7 +24,7 @@ const Performance = (props) => {
 
             <div className="item">
                 <h3>Barrel size</h3>
-                <input type="range" name="" id="" className="barrelsize"/>
+                <input type="range" min="1" max="3" defaultValue="1" name="" id="" className="barrelsize"/>
             </div>
 
             <div className="item">
