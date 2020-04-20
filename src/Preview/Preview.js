@@ -10,10 +10,11 @@ const Preview = () => {
     const context = React.useContext(Context);
 
     const handleclic = ()=>{
-        console.log(context.color);
+        console.log(context.sight);
     }
 
     return <div className="previewcontent">
+        <h1>{context.barrel}</h1>
             <img src={preview} className="preview_arm" onClick={handleclic} alt="Preview"/>
     </div>
 }

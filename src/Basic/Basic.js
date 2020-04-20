@@ -2,43 +2,50 @@ import React from 'react';
 import Header from '../Header/Header';
 import Preview from '../Preview/Preview';
 //import PropTypes from 'prop-types';
-import { HashRouter as Router, Route} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Context from '../context';
 
 
 const Basic = (props) => {
 
-const context = React.useContext(Context);
+    const context = React.useContext(Context);
 
     const handleInput = (event) => {
         console.log(event.target.value);
         context.contextSetName(event.target.value);
     };
 
-    const handleclickRed = ()=> {
+    const handleclickRed = () => {
         context.color = "red"
-        console.log(context.color);
+        context.contextSetColor(context.color);
     };
-    const handleclickBlue = ()=> {
+    const handleclickBlue = () => {
         context.color = "blue"
-        console.log(context.color);
+        context.contextSetColor(context.color);
     };
-    const handleclicklGold = ()=> {
+    const handleclicklGold = () => {
         context.color = "gold"
-        console.log(context.color);
+        context.contextSetColor(context.color);
     };
-    const handleclicklYellow = ()=> {
+    const handleclicklYellow = () => {
         context.color = "yellow"
-        console.log(context.color);
+        context.contextSetColor(context.color);
     };
-    const handleclicklBlack = ()=> {
+    const handleclicklBlack = () => {
         context.color = "black"
-        console.log(context.color);
+        context.contextSetColor(context.color);
     };
+
+
+    const handleMag = (event) => {
+        console.log(event.target.value)
+        context.contextSetMag(event.target.value);
+    }
+
 
     return <div>
         <Route component={Header}></Route>
-       
+
         <div className="container">
             <div className="item">
                 <h3>Name</h3>
@@ -48,7 +55,7 @@ const context = React.useContext(Context);
 
             <div className="item">
                 <h3>Mag size</h3>
-                <input type="range" min="1" max="3" defaultValue="1" name="" id="MagSize" />
+                <input type="range" min="1" max="3" name="" id="MagSize" value={context.mag} onChange={handleMag} />
             </div>
 
             <div className="item">
