@@ -15,8 +15,7 @@ const Accessories = (props) => {
         context.contextSetSight(context.sight);
     };
     const handleclicksight2 = () => {
-        context.sight = "2"
-        context.contextSetSight(context.sight);
+        context.contextSetSight("/images/gun/sight/sight2.png");
     };
     const handleclicksight3 = () => {
         context.sight = "3"
@@ -33,18 +32,18 @@ const Accessories = (props) => {
 
 
     const handleclicksilencer1 = () => {
-        context.silencer = "1"
-        context.contextSetSilencer(context.silencer);
+
+        context.contextSetSilencer("");
     };
 
     const handleclicksilencer2 = () => {
-        context.silencer = "2"
-        context.contextSetSilencer(context.silencer);
+        context.contextClassSilencer("preview_silencer");
+        context.contextSetSilencer("/images/gun/silencer/silencer2.png");
     };
 
     const handleclicksilencer3 = () => {
-        context.silencer = "3"
-        context.contextSetSilencer(context.silencer);
+        context.contextClassSilencer("preview_silencer2");
+        context.contextSetSilencer("/images/gun/silencer/silencer3.png");
     };
 
 

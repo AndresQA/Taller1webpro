@@ -1,12 +1,74 @@
-.previewcontent{
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.preview{
+width: 1550px;
+height: 600px;
+position: relative;
+margin: auto;
 }
 
-.preview_arm{
-    margin-top: 200px;
+.preview_armbody{
+    top: 35%;
+    right: 22%;
+   z-index: 1;
+    position: absolute;
+}
+
+.preview_butt{
+    position: absolute;
+    right: 2.5%;
+    top: 44.5%;
+}
+
+.preview_mag{
+    position: absolute;
+    right: 35.8%;
+    top: 52.5%;
+}
+
+.preview_handle{
+    position: absolute;
+    left: 40.5%;
+    top: 36.5%;
+}
+
+.preview_barrel{
+    position: absolute;
+    left: 21%;
+    top: 34.8%;
+    z-index: -1;
+}
+
+.preview_sight{
+    position: absolute;
+    left: 58.3%;
+    top: 24.8%;
+    z-index: 2;
+}
+
+.preview_butt2{
+    position: absolute;
+    right: 5.5%;
+    top: 44.5%;
+    z-index: 2;
+}
+
+.preview_silencer{
+    position: absolute;
+    left: 10%;
+    top: 42.6%;
+    z-index: -1;
+}
+
+.preview_silencer2{
+    position: absolute;
+    left: 7.6%;
+    top: 39.6%;
+    z-index: -1;
+}
+
+.namegun{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    left: 30px;
+    bottom: 10px;
 }

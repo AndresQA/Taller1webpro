@@ -11,14 +11,19 @@ import Context from '../context';
 function App() {
 
 
-  const [nameGun, setName] = React.useState('');
-  const [color, setColor] = React.useState('black');
-  const [sight, setSight] = React.useState('1');
-  const [silencer, setSilencer] = React.useState('1');
-  const [mag, setMag] = React.useState('1');
-  const [handle, setHandle] = React.useState('1');
-  const [butt, setButt] = React.useState('1');
-  const [barrel, setBarrel] = React.useState('1');
+  const [nameGun, setName] = React.useState('Ak-47');
+  const [color, setColor] = React.useState('/images/gun/body/body_black.png');
+  const [sight, setSight] = React.useState('');
+  const [silencer, setSilencer] = React.useState('');
+  const [mag, setMag] = React.useState('/images/gun/mag/mag3.png');
+  const [handle, setHandle] = React.useState('/images/gun/handle/handle1.png');
+  const [butt, setButt] = React.useState('');
+  const [barrelColor, setBarrelColor] = React.useState('/images/gun/body/barrel_black.png');
+
+  //clases
+  const [classButt, SetClassButt] = React.useState('');
+  const [classSilencer, SetClassSilencer] = React.useState('');
+
 
   const context = {
     name: nameGun,
@@ -35,8 +40,12 @@ function App() {
     contextSetHandle: setHandle,
     butt: butt,
     contextSetButt: setButt,
-    barrel: barrel,
-    contextSetBarrel: setBarrel,
+    barrelColor: barrelColor,
+    contextSetBarrelColor: setBarrelColor,
+    classButt: classButt,
+    funclassbutt: SetClassButt,
+    classSilencer: classSilencer,
+    contextClassSilencer: SetClassSilencer,
   }
   return (
     <div className="App">

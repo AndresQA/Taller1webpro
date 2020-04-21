@@ -15,10 +15,12 @@ const Context = React.createContext({
     contextSetHandle: ()=> null,
     butt: '',
     contextSetButt: () => null,
-    barrel: '',
-    contextSetBarrel: ()=> null,
-
-
+    barrelColor: '',
+    contextSetBarrelColor: ()=> null,
+    classButt: '',
+    funclassbutt: ()=> null,
+    classSilencer: '',
+    contextClassSilencer: () => null,
 });
 
 export default Context;

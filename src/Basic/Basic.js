@@ -15,31 +15,42 @@ const Basic = (props) => {
         context.contextSetName(event.target.value);
     };
 
-    const handleclickRed = () => {
-        context.color = "red"
-        context.contextSetColor(context.color);
-    };
+
+
     const handleclickBlue = () => {
-        context.color = "blue"
-        context.contextSetColor(context.color);
+        context.contextSetColor("/images/gun/body/body_blue.png");
+        context.contextSetBarrelColor("/images/gun/body/barrel_blue.png")
+        if (context.butt === "/images/gun/butt/butt2.png" || context.butt === "/images/gun/butt/butt2_gold.png" ) {
+            context.contextSetButt("/images/gun/butt/butt2_blue.png");
+        }
     };
     const handleclicklGold = () => {
-        context.color = "gold"
-        context.contextSetColor(context.color);
-    };
-    const handleclicklYellow = () => {
-        context.color = "yellow"
-        context.contextSetColor(context.color);
+        context.contextSetColor("/images/gun/body/body_gold.png");
+        context.contextSetBarrelColor("/images/gun/body/barrel_gold.png")
+        if (context.butt === "/images/gun/butt/butt2.png" || context.butt === "/images/gun/butt/butt2_blue.png" ) {
+            context.contextSetButt("/images/gun/butt/butt2_gold.png");
+        }
     };
     const handleclicklBlack = () => {
-        context.color = "black"
-        context.contextSetColor(context.color);
+        context.contextSetColor("/images/gun/body/body_black.png");
+        context.contextSetBarrelColor("/images/gun/body/barrel_black.png")
+        if (context.butt === "/images/gun/butt/butt2_blue.png" || context.butt === "/images/gun/butt/butt2_gold.png" ) {
+            context.contextSetButt("/images/gun/butt/butt2.png");
+        }
     };
+  
+    
+    const handleMag = (event) => {     
 
-
-    const handleMag = (event) => {
-        console.log(event.target.value)
-        context.contextSetMag(event.target.value);
+        if(event.target.value == 1){
+            context.contextSetMag("/images/gun/mag/mag1.png");
+        }
+        if(event.target.value == 2){
+            context.contextSetMag("/images/gun/mag/mag2.png");
+        }
+        if(event.target.value == 3){
+            context.contextSetMag("/images/gun/mag/mag3.png");
+        }
     }
 
 
@@ -55,17 +66,15 @@ const Basic = (props) => {
 
             <div className="item">
                 <h3>Mag size</h3>
-                <input type="range" min="1" max="3" name="" id="MagSize" value={context.mag} onChange={handleMag} />
+                <input type="range" min="1" max="3" name="" id="MagSize" onChange={handleMag} />
             </div>
 
             <div className="item">
                 <h3>Color</h3>
                 <div className="itempos">
-                    <div className="item__color red" onClick={handleclickRed}></div>
+                    <div className="item__color plate" onClick={handleclicklBlack}></div>
                     <div className="item__color blue" onClick={handleclickBlue}></div>
                     <div className="item__color gold" onClick={handleclicklGold}></div>
-                    <div className="item__color yellow" onClick={handleclicklYellow}></div>
-                    <div className="item__color white" onClick={handleclicklBlack}></div>
 
                 </div>
             </div>
