@@ -59,18 +59,18 @@ const Basic = (props) => {
 
         <div className="container">
             <div className="item">
-                <h3>Name</h3>
+                <p>Name</p>
                 <input type="text" placeholder="Setup Name" value={context.name} onChange={handleInput} />
 
             </div>
 
             <div className="item">
-                <h3>Mag size</h3>
+                <p>Mag size</p>
                 <input type="range" min="1" max="3" name="" id="MagSize" onChange={handleMag} />
             </div>
 
             <div className="item">
-                <h3>Color</h3>
+                <p>Color</p>
                 <div className="itempos">
                     <div className="item__color plate" onClick={handleclicklBlack}></div>
                     <div className="item__color blue" onClick={handleclickBlue}></div>

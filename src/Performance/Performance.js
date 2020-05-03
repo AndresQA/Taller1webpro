@@ -10,18 +10,15 @@ const Performance = (props) => {
     const context = React.useContext(Context);
 
     const handleclickhandle1 = () => {
-        context.handle = "/images/gun/handle/handle1.png"
-        context.contextSetHandle(context.handle);
+        context.contextSetHandle("/images/gun/handle/handle1.png");
     };
 
     const handleclickhandle2 = () => {
-        context.handle = "2"
-        context.contextSetHandle(context.handle);
+        context.contextSetHandle("/images/gun/handle/handle2.png");
     };
 
     const handleclickhandle3 = () => {
-        context.handle = "3"
-        context.contextSetHandle(context.handle);
+        context.contextSetHandle("/images/gun/handle/handle3.png");
     };
 
 
@@ -50,9 +47,9 @@ const Performance = (props) => {
 
 
 
-    const handlebarrel = (event) => {
-        context.contextSetBarrel(event.target.value);
-    }
+ //   const handlebarrel = (event) => {
+   //     context.contextSetBarrel(event.target.value);
+   // }
 
 
 
@@ -61,7 +58,7 @@ const Performance = (props) => {
         <Route component={Header}></Route>
         <div className="container">
             <div className="item">
-                <h3>Handle</h3>
+                <p>Handle</p>
                 <div className="itemposacc">
                     <div className="item__img" onClick={handleclickhandle1}></div>
                     <div className="item__img" onClick={handleclickhandle2}></div>
@@ -72,15 +69,9 @@ const Performance = (props) => {
                 </div>
 
             </div>
-            {/*
-            <div className="item">
-                <h3>Barrel size</h3>
-                <input type="range" min="1" max="3" value={context.barrel} name="" id="" className="barrelsize" onChange={handlebarrel}/>
-            </div>
-            */}
 
             <div className="item">
-                <h3>Butt stock</h3>
+                <p>Butt stock</p>
                 <div className="itemposacc">
                     <div className="item__img" onClick={handleclickbutt1}></div>
                     <div className="item__img" onClick={handleclickbutt2}></div>

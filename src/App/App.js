@@ -3,6 +3,7 @@ import Home from '../Home/Home';
 import Performance from '../Performance/Performance';
 import Basic from '../Basic/Basic';
 import Accessories from '../Accessories/Accessories';
+import Galery from '../Galery/Galery';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import Context from '../context';
 
@@ -23,7 +24,7 @@ function App() {
   //clases
   const [classButt, SetClassButt] = React.useState('');
   const [classSilencer, SetClassSilencer] = React.useState('');
-
+  const [classSight, SetClassSight] = React.useState('');
 
   const context = {
     name: nameGun,
@@ -46,6 +47,8 @@ function App() {
     funclassbutt: SetClassButt,
     classSilencer: classSilencer,
     contextClassSilencer: SetClassSilencer,
+    classSight: classSight,
+    contextClassSight: SetClassSight,
   }
   return (
     <div className="App">
@@ -57,6 +60,7 @@ function App() {
           <Route path="/basic" component={Basic} />
           <Route path="/accessories" component={Accessories} />
           <Route path="/performance" component={Performance} />
+          <Route path="/galery" component={Galery} />
 
 
           {/* 

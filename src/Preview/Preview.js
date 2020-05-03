@@ -1,6 +1,7 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
 import Context from '../context';
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,10 +21,12 @@ const Preview = () => {
             <img src={context.handle} className="preview_handle" alt="" />
             <img src={context.barrelColor} className="preview_barrel" alt="" />
             <img src={context.silencer} className={context.classSilencer} alt="" />
-            <img src={context.sight} className="preview_sight" alt="" />
+            <img src={context.sight} className={context.classSight} alt="" />
 
         </div>
-        <p className="namegun"><strong> {context.name} </strong></p>
+        <p className="namegun"> {context.name} </p>
+        <Link to="/galery"><p className="finishbtn">Finish</p>
+        </Link>
     </div>
 }
 

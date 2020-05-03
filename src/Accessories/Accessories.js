@@ -11,20 +11,18 @@ const Accessories = (props) => {
     const context = React.useContext(Context);
 
     const handleclicksight1 = () => {
-        context.sight = "1"
-        context.contextSetSight(context.sight);
+
+        context.contextSetSight("1");
     };
     const handleclicksight2 = () => {
+        context.contextClassSight("preview_sight2")
         context.contextSetSight("/images/gun/sight/sight2.png");
     };
     const handleclicksight3 = () => {
-        context.sight = "3"
-        context.contextSetSight(context.sight);
+        context.contextClassSight("preview_sight3")
+        context.contextSetSight("/images/gun/sight/sight3.png");
     };
-    const handleclicksight4 = () => {
-        context.sight = "4"
-        context.contextSetSight(context.sight);
-    };
+
 
 
 
@@ -54,19 +52,18 @@ const Accessories = (props) => {
         <Route component={Header}></Route>
         <div className="container">
             <div className="item">
-                <h3>Sight</h3>
+                <p>Sight</p>
                 <div className="itemposacc__sitght">
                     <div className="item__img" onClick={handleclicksight1}></div>
                     <div className="item__img" onClick={handleclicksight2}></div>
                     <div className="item__img" onClick={handleclicksight3}></div>
-                    <div className="item__img" onClick={handleclicksight4}></div>
 
                 </div>
 
             </div>
 
             <div className="item">
-                <h3>Silencer</h3>
+                <p>Silencer</p>
                 <div className="itemposacc">
                     <div className="item__img" onClick={handleclicksilencer1}></div>
                     <div className="item__img" onClick={handleclicksilencer2}></div>

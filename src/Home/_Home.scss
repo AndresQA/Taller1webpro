@@ -11,9 +11,16 @@
 }
 
 .Homescreen__startbtn{
-    width: 280px;
-    height: 100px;
-    margin-bottom: 40px;
-    font-size: 50px;
+    position: absolute;
+    width: 240px;
+    left: 41%;
+    bottom: 30px;
 
+}
+
+.btnstart{
+    font-size: 80px;
+    & :hover{
+        color: red;
+    }
 }

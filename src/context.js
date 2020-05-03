@@ -21,6 +21,8 @@ const Context = React.createContext({
     funclassbutt: ()=> null,
     classSilencer: '',
     contextClassSilencer: () => null,
+    classSight: '',
+    contextClassSight: () => null,
 });
 
 export default Context;
