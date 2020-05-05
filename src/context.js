@@ -2,6 +2,7 @@ import React from 'react';
 
 const Context = React.createContext({
     name: '',
+    id: '',
     contextSetName: () => null,
     color: 'black',
     contextSetColor: () => null,
@@ -23,6 +24,10 @@ const Context = React.createContext({
     contextClassSilencer: () => null,
     classSight: '',
     contextClassSight: () => null,
+    handleFinish:()=>null,
+    list: [],
+    setList: ()=> null,
+    handleChangeId: ()=> null,
 });
 
 export default Context;

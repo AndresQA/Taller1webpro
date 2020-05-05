@@ -15,6 +15,7 @@ const Performance = (props) => {
 
     const handleclickhandle2 = () => {
         context.contextSetHandle("/images/gun/handle/handle2.png");
+
     };
 
     const handleclickhandle3 = () => {
@@ -26,6 +27,7 @@ const Performance = (props) => {
 
     const handleclickbutt1 = () => {
         context.contextSetButt("");
+ 
     };
 
     const handleclickbutt2 = () => {
@@ -40,16 +42,11 @@ const Performance = (props) => {
         } else if (context.color === "/images/gun/body/body_gold.png") {
             context.contextSetButt("/images/gun/butt/butt2_gold.png");
         } else {
-            context.contextSetButt("/images/gun/butt/butt2.png");
+            context.contextSetButt("/images/gun/butt/butt2_black.png");
         }
 
     };
 
-
-
- //   const handlebarrel = (event) => {
-   //     context.contextSetBarrel(event.target.value);
-   // }
 
 
 
@@ -60,9 +57,9 @@ const Performance = (props) => {
             <div className="item">
                 <p>Handle</p>
                 <div className="itemposacc">
-                    <div className="item__img" onClick={handleclickhandle1}></div>
-                    <div className="item__img" onClick={handleclickhandle2}></div>
-                    <div className="item__img" onClick={handleclickhandle3}></div>
+                    <div className={context.handle == "/images/gun/handle/handle1.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle1}><img src="/images/gun/handle/handle1.png" alt=""/></div>
+                    <div className={context.handle == "/images/gun/handle/handle2.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle2}><img src="/images/gun/handle/handle2.png" alt=""/></div>
+                    <div className={context.handle == "/images/gun/handle/handle3.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle3}><img className="handlelast" src="/images/gun/handle/handle3.png" alt=""/></div>
 
 
 
@@ -73,9 +70,9 @@ const Performance = (props) => {
             <div className="item">
                 <p>Butt stock</p>
                 <div className="itemposacc">
-                    <div className="item__img" onClick={handleclickbutt1}></div>
-                    <div className="item__img" onClick={handleclickbutt2}></div>
-                    <div className="item__img" onClick={handleclickbutt3}></div>
+                    <div className={context.butt == "" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt1}><img src="/images/gun/butt/Stock.png" alt=""/></div>
+                    <div className={context.butt == "/images/gun/butt/butt1.png" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt2}><img src="/images/gun/butt/butt1.png" alt=""/></div>
+                    <div className={context.butt == "/images/gun/butt/butt2.png" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt3}><img src="/images/gun/butt/butt2_black.png" alt=""/></div>
 
 
                 </div>

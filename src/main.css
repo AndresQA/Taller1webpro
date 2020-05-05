@@ -42,7 +42,7 @@ p {
 }
 
 .btnstart {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .btnstart :hover {
@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .container {
@@ -80,9 +81,16 @@ body {
   margin-top: 0px;
 }
 
+.item :hover {
+  border-color: red;
+  -webkit-transition: border-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+
 .item__color {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
@@ -95,29 +103,19 @@ body {
       justify-content: space-around;
 }
 
-.red {
-  background-color: red;
-  border: solid 3px white;
-}
-
 .blue {
   background-color: blue;
-  border: solid 3px white;
+  border: solid 6px white;
 }
 
 .gold {
   background-color: gold;
-  border: solid 3px white;
-}
-
-.yellow {
-  background-color: yellow;
-  border: solid 3px white;
+  border: solid 6px white;
 }
 
 .plate {
   background-color: #8b8b8b;
-  border: solid 3px white;
+  border: solid 6px white;
 }
 
 a {
@@ -134,9 +132,12 @@ a {
       justify-content: space-around;
   font-size: 30px;
   background-color: black;
+  width: 100%;
 }
 
 .Mainnav :hover {
+  -webkit-transition: color 1s;
+  transition: color 1s;
   color: red;
 }
 
@@ -145,10 +146,26 @@ a {
 }
 
 .item__img {
-  width: 110px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background-color: white;
   cursor: pointer;
+  border-radius: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 8px;
+  border-color: white;
+}
+
+.item__img img {
+  width: 72%;
 }
 
 .itemposacc {
@@ -161,6 +178,12 @@ a {
           justify-content: space-between;
 }
 
+.itemposacc :hover {
+  border-color: red;
+  -webkit-transition: border-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+
 .itemposacc__sitght {
   width: 500px;
   display: -webkit-box;
@@ -169,6 +192,16 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.itemposacc__sitght :hover {
+  border-color: red;
+  -webkit-transition: border-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+
+.handlelast {
+  width: 55%;
 }
 
 .preview {
@@ -261,7 +294,143 @@ a {
   color: #c9ca18;
 }
 
-.barrelsize {
-  width: 170px;
+.handlelast {
+  width: 55%;
+}
+
+.itemselect {
+  border-color: red;
+}
+
+.armcreate {
+  width: 500px;
+  height: 220px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.armcreate p {
+  margin: 5px 0px;
+}
+
+.contentsArms {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  z-index: 5;
+}
+
+.armcreate__prev {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  cursor: pointer;
+}
+
+.preview_armbodyGalery {
+  width: 30%;
+  top: 25%;
+  right: 27%;
+  z-index: 1;
+  position: absolute;
+}
+
+.preview_buttGalery {
+  width: 22%;
+  position: absolute;
+  right: 7.5%;
+  top: 34.5%;
+}
+
+.preview_magGalery {
+  width: 10%;
+  position: absolute;
+  right: 40.8%;
+  top: 42.5%;
+}
+
+.preview_handleGalery {
+  width: 13%;
+  position: absolute;
+  left: 35.5%;
+  top: 26.5%;
+  z-index: 2;
+}
+
+.preview_barrelGalery {
+  width: 21.5%;
+  position: absolute;
+  left: 16%;
+  top: 24.8%;
+}
+
+.preview_sight2Galery {
+  width: 9%;
+  position: absolute;
+  left: 53.3%;
+  top: 14.8%;
+  z-index: 2;
+}
+
+.preview_sight3Galery {
+  width: 10%;
+  position: absolute;
+  left: 53.3%;
+  top: 10.8%;
+  z-index: 4;
+}
+
+.preview_butt2Galery {
+  width: 20%;
+  position: absolute;
+  right: 10.5%;
+  top: 34.5%;
+  z-index: 2;
+}
+
+.preview_silencerGalery {
+  width: 12%;
+  position: absolute;
+  left: 5%;
+  top: 32%;
+}
+
+.preview_silencer2Galery {
+  width: 12%;
+  position: absolute;
+  left: 5.6%;
+  top: 30.6%;
+}
+
+.deleteall {
+  cursor: pointer;
+}
+
+.deleteall :hover {
+  color: yellow;
+}
+
+.btnDelete {
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

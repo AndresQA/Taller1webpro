@@ -10,12 +10,15 @@ a{
     justify-content: space-around;
     font-size: 30px;
     background-color: black;
+    width: 100%;
     
     & :hover{
+        transition: color 1s;
         color: red;
     }
 }
 
 .redchange{
     color: red;
+
 }

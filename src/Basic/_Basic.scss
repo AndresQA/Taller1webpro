@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container{
@@ -22,12 +23,21 @@ body{
     & h3{
         margin-top: 0px;
     }
+
+    & :hover{
+        border-color: rgb(255, 0, 0);
+    -webkit-transition: border-color 500ms linear;
+    -ms-transition: border-color 500ms linear;
+    transition: border-color 500ms linear;
+    }
 }
 
 .item__color{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
     cursor: pointer;
+    
 }
 .itempos{
     display: flex;
@@ -36,27 +46,20 @@ body{
     
 }
 
-.red{
-    background-color: red;
-    border: solid 3px white;
-}
 
 .blue{
     background-color: blue;
-    border: solid 3px white;
+    border: solid 6px white;
+    
 }
 
 .gold{
     background-color: gold;
-    border: solid 3px white;
+    border: solid 6px white;
 }
 
-.yellow{
-    background-color: yellow;
-    border: solid 3px white;
-}
 
 .plate{
     background-color: rgb(139, 139, 139);
-    border: solid 3px white;
+    border: solid 6px white;
 }
