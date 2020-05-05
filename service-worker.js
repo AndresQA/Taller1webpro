@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Taller1webpro/precache-manifest.c78536947b47e0107c9650d20f51df95.js"
+  "/Taller1webpro/precache-manifest.e60e3c03a9fb45946ff64bac9ca4833a.js"
 );
 
 self.addEventListener('message', (event) => {
