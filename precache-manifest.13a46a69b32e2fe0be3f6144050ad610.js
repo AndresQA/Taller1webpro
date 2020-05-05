@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cac81f35e82e7e3a68483581254bc5fd",
+    "revision": "5c652dff7531b611bd4c439b7290f55d",
     "url": "/Taller1webpro/index.html"
   },
   {
-    "revision": "04ea11e150c0fb6582f1",
-    "url": "/Taller1webpro/static/css/main.653c4334.chunk.css"
+    "revision": "946c9d6198bbb84d8c85",
+    "url": "/Taller1webpro/static/css/main.241fd982.chunk.css"
   },
   {
     "revision": "9c243a2bbadb87d793d0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Taller1webpro/static/js/2.0fb41c26.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04ea11e150c0fb6582f1",
-    "url": "/Taller1webpro/static/js/main.20f05a9a.chunk.js"
+    "revision": "946c9d6198bbb84d8c85",
+    "url": "/Taller1webpro/static/js/main.a152b445.chunk.js"
   },
   {
     "revision": "1d7a6a30a8bd226c7a1b",
