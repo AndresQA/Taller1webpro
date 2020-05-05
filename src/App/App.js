@@ -65,6 +65,7 @@ function App() {
         classButt: context.classButt,
         classSilencer: context.classSilencer,
         classSight: context.classSight,
+        colorMag: context.colorMag,
       }
     ]);
     
@@ -80,6 +81,7 @@ function App() {
     context.contextSetHandle('./images/gun/handle/handle1.png');
     context.contextSetButt('');
     context.contextSetBarrelColor('./images/gun/body/barrel_black.png');
+    context.contextSetColorMag('black')
   }
 
 

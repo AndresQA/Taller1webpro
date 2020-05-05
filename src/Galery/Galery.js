@@ -61,6 +61,7 @@ const Galery = () => {
         context.funclassbutt(element.classButt);
         context.contextClassSilencer(element.classSilencer);
         context.contextClassSight(element.classSight);
+        context.contextSetColorMag(element.colorMag);
         history.push('/basic');
 
     }
@@ -83,7 +84,7 @@ const Galery = () => {
                 <div className="armcreate__prev" onClick={() => handleArmEdit(arm.id)}>
                     <img src={arm.color} className="preview_armbodyGalery" alt="" />
                     <img src={arm.butt} className={arm.classButt + 'Galery'} alt="" />
-                    <img src={'./images/gun/mag/mag' + arm.mag + '.png'} className="preview_magGalery" alt="" />
+                    <img src={'./images/gun/mag/mag' + arm.mag + arm.colorMag+'.png'} className="preview_magGalery" alt="" />
                     <img src={arm.handle} className="preview_handleGalery" alt="" />
                     <img src={arm.barrelColor} className="preview_barrelGalery" alt="" />
                     <img src={arm.silencer} className={arm.classSilencer + 'Galery'} alt="" />
