@@ -34,19 +34,19 @@ p {
           align-items: flex-end;
 }
 
-.Homescreen__startbtn {
-  position: absolute;
-  width: 240px;
-  left: 41%;
-  bottom: 30px;
-}
-
 .btnstart {
   font-size: 60px;
+  margin: 50px;
 }
 
-.btnstart :hover {
-  color: red;
+.hoverprop {
+  color: white;
+}
+
+.hoverprop :hover {
+  color: #fff12b;
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
 }
 
 body {
@@ -81,12 +81,6 @@ body {
   margin-top: 0px;
 }
 
-.item :hover {
-  border-color: red;
-  -webkit-transition: border-color 500ms linear;
-  transition: border-color 500ms linear;
-}
-
 .item__color {
   width: 80px;
   height: 80px;
@@ -103,6 +97,12 @@ body {
       justify-content: space-around;
 }
 
+.itempos :hover {
+  border-color: red;
+  -webkit-transition: border-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+
 .blue {
   background-color: blue;
   border: solid 6px white;
@@ -116,6 +116,23 @@ body {
 .plate {
   background-color: #8b8b8b;
   border: solid 6px white;
+}
+
+.inputName {
+  height: 30px;
+  padding-left: 5px;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-bottom: solid 3px red;
+}
+
+.inputName .text:focus {
+  outline: 0px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
 }
 
 a {

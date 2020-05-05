@@ -1,23 +1,30 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Context from '../context';
 
 
 const Home = () => {
 
     const context = React.useContext(Context);
-    const handleChangeId = () =>{
+
+
+    const handleChangeId = () => {
         context.handleChangeId();
     }
 
 
     return <div className="Homescreen">
         <Link to="/basic">
-        <p onClick={handleChangeId} className="btnstart">START</p>
+            <div className="hoverprop">
+                <p onClick={handleChangeId} className="btnstart">CREATE</p>
+            </div>
         </Link>
-        <br/>
+        <br />
         <Link to="/galery">
-        <p className="btnstart">GALERY</p>
+            <div className="hoverprop">
+                <p className="btnstart">GALERY</p>
+
+            </div>
         </Link>
     </div>
 }

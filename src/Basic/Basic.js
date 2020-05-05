@@ -45,7 +45,7 @@ const Basic = (props) => {
         <div className="container">
             <div className="item">
                 <p>Name</p>
-                <input type="text" placeholder="Setup Name" value={context.name} onChange={handleInput} />
+                <input className="inputName" type="text" placeholder="Setup Name" value={context.name} onChange={handleInput} />
 
             </div>
 

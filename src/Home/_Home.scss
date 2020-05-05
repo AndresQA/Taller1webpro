@@ -10,17 +10,22 @@
     align-items: flex-end;
 }
 
-.Homescreen__startbtn{
-    position: absolute;
-    width: 240px;
-    left: 41%;
-    bottom: 30px;
-
-}
 
 .btnstart{
     font-size: 60px;
+
+    margin: 50px;
+
+
+}
+
+.hoverprop{
+    color: white;
     & :hover{
-        color: red;
+        color: rgb(255, 241, 43);
+        -webkit-transition: color 200ms linear;
+        -ms-transition: color 200ms linear;
+        transition: color 200ms linear;
     }
+
 }
