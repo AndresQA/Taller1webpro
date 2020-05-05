@@ -16,13 +16,13 @@ function App() {
 
   const [nameGun, setName] = React.useState('Ak-47');
   const [id, setId] = React.useState(v4());
-  const [color, setColor] = React.useState('/images/gun/body/body_black.png');
+  const [color, setColor] = React.useState('./images/gun/body/body_black.png');
   const [sight, setSight] = React.useState('');
   const [silencer, setSilencer] = React.useState('');
   const [mag, setMag] = React.useState('1');
-  const [handle, setHandle] = React.useState('/images/gun/handle/handle1.png');
+  const [handle, setHandle] = React.useState('./images/gun/handle/handle1.png');
   const [butt, setButt] = React.useState('');
-  const [barrelColor, setBarrelColor] = React.useState('/images/gun/body/barrel_black.png');
+  const [barrelColor, setBarrelColor] = React.useState('./images/gun/body/barrel_black.png');
 
 
 
@@ -72,13 +72,13 @@ function App() {
   const handleChangeId =() =>{
     setId(v4());
     context.contextSetName('Ak-47');
-    context.contextSetColor('/images/gun/body/body_black.png');
+    context.contextSetColor('./images/gun/body/body_black.png');
     context.contextSetSight('');
     context.contextSetSilencer('');
     context.contextSetMag('1');
-    context.contextSetHandle('/images/gun/handle/handle1.png');
+    context.contextSetHandle('./images/gun/handle/handle1.png');
     context.contextSetButt('');
-    context.contextSetBarrelColor('/images/gun/body/barrel_black.png');
+    context.contextSetBarrelColor('./images/gun/body/barrel_black.png');
   }
 
 

@@ -79,11 +79,11 @@ const Galery = () => {
         {context.list.map(arm => {
             return <div className={'armcreate'} id={arm.id}>
                 <p>{arm.name}</p>
-                <img className="btnDelete" onClick={() => handleArmDelete(arm.id)} src="/images/delete.png" alt="" />
+                <img className="btnDelete" onClick={() => handleArmDelete(arm.id)} src="./images/delete.png" alt="" />
                 <div className="armcreate__prev" onClick={() => handleArmEdit(arm.id)}>
                     <img src={arm.color} className="preview_armbodyGalery" alt="" />
                     <img src={arm.butt} className={arm.classButt + 'Galery'} alt="" />
-                    <img src={'/images/gun/mag/mag' + arm.mag + '.png'} className="preview_magGalery" alt="" />
+                    <img src={'./images/gun/mag/mag' + arm.mag + '.png'} className="preview_magGalery" alt="" />
                     <img src={arm.handle} className="preview_handleGalery" alt="" />
                     <img src={arm.barrelColor} className="preview_barrelGalery" alt="" />
                     <img src={arm.silencer} className={arm.classSilencer + 'Galery'} alt="" />

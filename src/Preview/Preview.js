@@ -46,7 +46,7 @@ const Preview = () => {
         <div className="preview">
             <img src={context.color} className="preview_armbody" alt="" />
             <img src={context.butt} className={context.classButt} alt="" />
-            <img src={'/images/gun/mag/mag'+context.mag+'.png'} className="preview_mag" alt="" />
+            <img src={'./images/gun/mag/mag'+context.mag+'.png'} className="preview_mag" alt="" />
             <img src={context.handle} className="preview_handle" alt="" />
             <img src={context.barrelColor} className="preview_barrel" alt="" />
             <img src={context.silencer} className={context.classSilencer} alt="" />

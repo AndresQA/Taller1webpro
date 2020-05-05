@@ -21,10 +21,10 @@ const Basic = (props) => {
 
 
     const handleClickColor = (bodycolor) =>{
-            context.contextSetColor('/images/gun/body/body_'+bodycolor+'.png');
-            context.contextSetBarrelColor('/images/gun/body/barrel_'+bodycolor+'.png')
-            if (context.butt != "" && context.butt != "/images/gun/butt/butt1.png") {
-                context.contextSetButt('/images/gun/butt/butt2_'+bodycolor+'.png');
+            context.contextSetColor('./images/gun/body/body_'+bodycolor+'.png');
+            context.contextSetBarrelColor('./images/gun/body/barrel_'+bodycolor+'.png')
+            if (context.butt != "" && context.butt != "./images/gun/butt/butt1.png") {
+                context.contextSetButt('./images/gun/butt/butt2_'+bodycolor+'.png');
             }
        
 
@@ -57,9 +57,9 @@ const Basic = (props) => {
             <div className="item">
                 <p>Color</p>
                 <div className="itempos">
-                    <div className={context.color == "/images/gun/body/body_black.png" ? "item__color plate itemselect" : "item__color plate"} onClick={()=>handleClickColor('black')}></div>
-                    <div className={context.color == "/images/gun/body/body_blue.png" ? "item__color blue itemselect" : "item__color blue"}  onClick={()=>handleClickColor('blue')}></div>
-                    <div className={context.color == "/images/gun/body/body_gold.png" ? "item__color gold itemselect" : "item__color gold"}  onClick={()=>handleClickColor('gold')}></div>
+                    <div className={context.color == "./images/gun/body/body_black.png" ? "item__color plate itemselect" : "item__color plate"} onClick={()=>handleClickColor('black')}></div>
+                    <div className={context.color == "./images/gun/body/body_blue.png" ? "item__color blue itemselect" : "item__color blue"}  onClick={()=>handleClickColor('blue')}></div>
+                    <div className={context.color == "./images/gun/body/body_gold.png" ? "item__color gold itemselect" : "item__color gold"}  onClick={()=>handleClickColor('gold')}></div>
                 </div>
             </div>
 
