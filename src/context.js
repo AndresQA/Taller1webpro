@@ -28,6 +28,8 @@ const Context = React.createContext({
     list: [],
     setList: ()=> null,
     handleChangeId: ()=> null,
+    colorMag: '',
+    contextSetColorMag: () => null,
 });
 
 export default Context;

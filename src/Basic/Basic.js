@@ -26,6 +26,7 @@ const Basic = (props) => {
             if (context.butt != "" && context.butt != "./images/gun/butt/butt1.png") {
                 context.contextSetButt('./images/gun/butt/butt2_'+bodycolor+'.png');
             }
+            context.contextSetColorMag(bodycolor);
        
 
     };
@@ -68,12 +69,6 @@ const Basic = (props) => {
 
     </div>
 }
-/*
-Basic.propTypes = {
-    nameGun: PropTypes.string,
-    setName: PropTypes.func,
-    setColor: PropTypes.func,
-}
-*/
+
 
 export default Basic;

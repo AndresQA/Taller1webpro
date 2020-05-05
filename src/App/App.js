@@ -23,6 +23,7 @@ function App() {
   const [handle, setHandle] = React.useState('./images/gun/handle/handle1.png');
   const [butt, setButt] = React.useState('');
   const [barrelColor, setBarrelColor] = React.useState('./images/gun/body/barrel_black.png');
+  const [colorMag, setColorMag] = React.useState('black');
 
 
 
@@ -111,6 +112,8 @@ function App() {
     setList: setList,
     handleFinish,
     handleChangeId,
+    colorMag: colorMag,
+    contextSetColorMag: setColorMag,
   }
   return (
     <div className="App">
