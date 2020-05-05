@@ -55,7 +55,7 @@ const Performance = (props) => {
         <Route component={Header}></Route>
         <div className="container">
             <div className="item">
-                <p>Handle</p>
+                <p>Empuñaduras</p>
                 <div className="itemposacc">
                     <div className={context.handle == "./images/gun/handle/handle1.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle1}><img src="./images/gun/handle/handle1.png" alt=""/></div>
                     <div className={context.handle == "./images/gun/handle/handle2.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle2}><img src="./images/gun/handle/handle2.png" alt=""/></div>
@@ -68,7 +68,7 @@ const Performance = (props) => {
             </div>
 
             <div className="item">
-                <p>Butt stock</p>
+                <p>Culatas</p>
                 <div className="itemposacc">
                     <div className={context.butt == "" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt1}><img src="/images/gun/butt/Stock.png" alt=""/></div>
                     <div className={context.butt == "./images/gun/butt/butt1.png" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt2}><img src="./images/gun/butt/butt1.png" alt=""/></div>

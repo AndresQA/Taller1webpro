@@ -45,13 +45,13 @@ const Basic = (props) => {
 
         <div className="container">
             <div className="item">
-                <p>Name</p>
-                <input className="inputName" type="text" placeholder="Setup Name" value={context.name} onChange={handleInput} />
+                <p>Nombre</p>
+                <input className="inputName" type="text" placeholder="Nombre del mod" value={context.name} onChange={handleInput} />
 
             </div>
 
             <div className="item">
-                <p>Mag size</p>
+                <p>Tamaño del cargador</p>
                 <input type="range" min="1" max="3" name="" value={context.mag} onChange={handleMag} />
             </div>
 

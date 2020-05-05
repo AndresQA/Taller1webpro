@@ -69,7 +69,7 @@ const Galery = () => {
 
     return <div className="contentsArms">
 
-        <h1>Galery</h1>
+        <h1>Galeria</h1>
 
         <Link to="/">
             <h1>Volver</h1>
@@ -94,7 +94,7 @@ const Galery = () => {
         })}
 
         {context.list.length > 0 &&
-            <p className="deleteall" onClick={handleDeleteAll}>Delete All</p>
+            <p className="deleteall" onClick={handleDeleteAll}>Eliminar todas</p>
 
         }
 

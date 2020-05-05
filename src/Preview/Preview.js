@@ -55,7 +55,7 @@ const Preview = () => {
         </div>
         <p className="namegun"> {context.name} </p>
         {/*<p onClick={handleEdit}>Edit</p> */}       
-        <Link to="/galery"><p onClick={handleFinish} className="finishbtn">Finish</p>
+        <Link to="/galery"><p onClick={handleFinish} className="finishbtn">Terminar</p>
         </Link>
     </div>
 }

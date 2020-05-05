@@ -52,7 +52,7 @@ const Accessories = (props) => {
         <Route component={Header}></Route>
         <div className="container">
             <div className="item">
-                <p>Sight</p>
+                <p>Opticas</p>
                 <div className="itemposacc__sitght">
                     <div className={context.sight == "" ? "item__img itemselect" : "item__img"} onClick={handleclicksight1}><img src="./images/gun/sight/stock.png" alt=""/></div>
                     <div className={context.sight == "./images/gun/sight/sight2.png" ? "item__img itemselect" : "item__img"} onClick={handleclicksight2}><img src="./images/gun/sight/sight2.png" alt=""/></div>
@@ -63,7 +63,7 @@ const Accessories = (props) => {
             </div>
 
             <div className="item">
-                <p>Silencer</p>
+                <p>Silenciadores</p>
                 <div className="itemposacc">
                     <div className={context.silencer == "" ? "item__img itemselect" : "item__img"} onClick={handleclicksilencer1}><img src="/images/gun/silencer/stock.png" alt=""/></div>
                     <div className={context.silencer == "./images/gun/silencer/silencer2.png" ? "item__img itemselect" : "item__img"} onClick={handleclicksilencer2}><img src="./images/gun/silencer/silencer2.png" alt=""/></div>

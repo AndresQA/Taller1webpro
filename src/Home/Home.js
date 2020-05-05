@@ -16,13 +16,13 @@ const Home = () => {
     return <div className="Homescreen">
         <Link to="/basic">
             <div className="hoverprop">
-                <p onClick={handleChangeId} className="btnstart">CREATE</p>
+                <p onClick={handleChangeId} className="btnstart">CREAR</p>
             </div>
         </Link>
         <br />
         <Link to="/galery">
             <div className="hoverprop">
-                <p className="btnstart">GALERY</p>
+                <p className="btnstart">GALERIA</p>
 
             </div>
         </Link>
