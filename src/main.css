@@ -19,7 +19,7 @@ p {
 .Homescreen {
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/backgroundstart.jpg);
+  background-image: url(https://github.com/AndresQA/Taller1webpro/blob/gh-pages/images/backgroundstart.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,6 +32,7 @@ p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  padding-bottom: 100px;
 }
 
 .btnstart {
@@ -39,20 +40,43 @@ p {
   margin: 50px;
 }
 
+.hoverimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hoverimg img {
+  position: absolute;
+  width: 280px;
+  opacity: 0;
+}
+
 .hoverprop {
   color: white;
+  z-index: 1;
 }
 
 .hoverprop :hover {
   color: #fff12b;
   -webkit-transition: color 200ms linear;
   transition: color 200ms linear;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  opacity: 1;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/backgroundapp.jpg);
+  background-image: url(https://github.com/AndresQA/Taller1webpro/blob/gh-pages/images/backgroundapp.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,9 +105,17 @@ body {
   margin-top: 0px;
 }
 
+.itempos:last-child {
+  width: 100%;
+}
+
+.item:last-child {
+  width: 400px;
+}
+
 .item__color {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -97,25 +129,16 @@ body {
       justify-content: space-around;
 }
 
-.itempos :hover {
-  border-color: red;
-  -webkit-transition: border-color 500ms linear;
-  transition: border-color 500ms linear;
-}
-
 .blue {
   background-color: blue;
-  border: solid 6px white;
 }
 
 .gold {
   background-color: gold;
-  border: solid 6px white;
 }
 
 .plate {
   background-color: #8b8b8b;
-  border: solid 6px white;
 }
 
 .inputName {
@@ -133,6 +156,29 @@ body {
 
 input:focus, textarea:focus, select:focus {
   outline: none;
+}
+
+.hoverimgb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hoverimgb img {
+  position: absolute;
+  width: 150px;
+  opacity: 0;
+}
+
+.plate {
+  z-index: 1;
 }
 
 a {

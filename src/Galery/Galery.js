@@ -50,7 +50,7 @@ const Galery = () => {
         })
 
         context.contextSetName(element.name);
-        context.id = element.id;
+        context.setId(element.id)
         context.contextSetColor(element.color);
         context.contextSetSight(element.sight);
         context.contextSetSilencer(element.silencer);

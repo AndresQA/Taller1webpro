@@ -1,7 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/backgroundapp.jpg);
+    background-image: url(https://github.com/AndresQA/Taller1webpro/blob/gh-pages/images/backgroundapp.jpg?raw=true);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,9 +27,17 @@ body{
   
 }
 
+.itempos:last-child{
+    width: 100%;
+}
+
+.item:last-child{
+    width: 400px;
+}
+
 .item__color{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     cursor: pointer;
     
@@ -38,31 +46,26 @@ body{
     display: flex;
     width: 280px;
     justify-content: space-around;
-    & :hover{
-        border-color: rgb(255, 0, 0);
-    -webkit-transition: border-color 500ms linear;
-    -ms-transition: border-color 500ms linear;
-    transition: border-color 500ms linear;
-    }
+
     
 }
 
 
 .blue{
     background-color: blue;
-    border: solid 6px white;
+
     
 }
 
 .gold{
     background-color: gold;
-    border: solid 6px white;
+
 }
 
 
 .plate{
     background-color: rgb(139, 139, 139);
-    border: solid 6px white;
+
 }
 
 .inputName{
@@ -83,4 +86,27 @@ body{
 
 input:focus, textarea:focus, select:focus{
     outline: none;
+}
+
+
+
+.hoverimgb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    position: relative;
+   & img{
+        position: absolute;
+        width: 150px;
+        opacity: 0;
+        
+   }
+      
+}
+
+
+.plate{
+    z-index: 1;
 }

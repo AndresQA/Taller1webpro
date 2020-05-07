@@ -1,5 +1,4 @@
 {
-  "homepage": "http://andresqa.github.io/Taller1webpro",
   "name": "taller1web-app",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +8,8 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "^3.7.2",
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.2",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

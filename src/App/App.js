@@ -51,23 +51,65 @@ function App() {
 
   //agrega los elementos a la lista
   const handleFinish = () => {
-    context.setList([
-      ...context.list, {
-        name: context.name,
-        id: context.id,
-        color: context.color,
-        butt: context.butt,
-        mag: context.mag,
-        handle: context.handle,
-        barrelColor: context.barrelColor,
-        silencer: context.silencer,
-        sight: context.sight,
-        classButt: context.classButt,
-        classSilencer: context.classSilencer,
-        classSight: context.classSight,
-        colorMag: context.colorMag,
+
+    const index = context.list.findIndex((elem) => {
+      //console.log(elem.id)
+      return elem.id === id;
+    })
+
+    console.log(id)
+
+
+      if (index === -1) {
+        context.setList([
+          ...context.list, {
+            name: context.name,
+            id: context.id,
+            color: context.color,
+            butt: context.butt,
+            mag: context.mag,
+            handle: context.handle,
+            barrelColor: context.barrelColor,
+            silencer: context.silencer,
+            sight: context.sight,
+            classButt: context.classButt,
+            classSilencer: context.classSilencer,
+            classSight: context.classSight,
+            colorMag: context.colorMag,
+          }
+        ]);
+    
+      }else {/*
+        const newList = context.list.slice();
+        newList.splice(index, 1,);
+        */
+        context.setList([
+          ...context.list.slice(0, index),
+          {
+            name: context.name,
+            id: context.id,
+            color: context.color,
+            butt: context.butt,
+            mag: context.mag,
+            handle: context.handle,
+            barrelColor: context.barrelColor,
+            silencer: context.silencer,
+            sight: context.sight,
+            classButt: context.classButt,
+            classSilencer: context.classSilencer,
+            classSight: context.classSight,
+            colorMag: context.colorMag,
+          },
+          ...context.list.slice(index + 1),
+
+        ])
       }
-    ]);
+
+
+
+
+        
+
     
   };
 
@@ -89,6 +131,7 @@ function App() {
   const context = {
     name: nameGun,
     id: id,
+    setId,
     contextSetName: setName,
     color: color,
     contextSetColor: setColor,

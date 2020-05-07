@@ -3,6 +3,7 @@ import React from 'react';
 const Context = React.createContext({
     name: '',
     id: '',
+    setId: ()=> null,
     contextSetName: () => null,
     color: 'black',
     contextSetColor: () => null,

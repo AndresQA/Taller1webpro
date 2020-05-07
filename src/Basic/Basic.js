@@ -20,23 +20,36 @@ const Basic = (props) => {
     };
 
 
-    const handleClickColor = (bodycolor) =>{
-            context.contextSetColor('./images/gun/body/body_'+bodycolor+'.png');
-            context.contextSetBarrelColor('./images/gun/body/barrel_'+bodycolor+'.png')
-            if (context.butt != "" && context.butt != "./images/gun/butt/butt1.png") {
-                context.contextSetButt('./images/gun/butt/butt2_'+bodycolor+'.png');
-            }
-            context.contextSetColorMag(bodycolor);
-       
+    const handleClickColor = (bodycolor) => {
+        context.contextSetColor('./images/gun/body/body_' + bodycolor + '.png');
+        context.contextSetBarrelColor('./images/gun/body/barrel_' + bodycolor + '.png')
+        if (context.butt != "" && context.butt != "./images/gun/butt/butt1.png") {
+            context.contextSetButt('./images/gun/butt/butt2_' + bodycolor + '.png');
+        }
+        context.contextSetColorMag(bodycolor);
+
 
     };
 
+    const handleMag = (event) => {
+        context.contextSetMag(event.target.value);
+
+    }
+
+    const handleHover = (index) => {
+        console.log("hola")
+        const node = document.querySelector(".imghover" + index)
+        node.classList.add('animated', 'fadeIn')
+
+    }
+
+    const handleOut = (index) => {
 
 
-    
-    const handleMag = (event) => {     
-        context.contextSetMag(event.target.value); 
-        
+        const node = document.querySelector(".imghover" + index)
+        node.classList.remove('animated', 'fadeIn')
+
+
     }
 
 
@@ -47,7 +60,6 @@ const Basic = (props) => {
             <div className="item">
                 <p>Nombre</p>
                 <input className="inputName" type="text" placeholder="Nombre del mod" value={context.name} onChange={handleInput} />
-
             </div>
 
             <div className="item">
@@ -58,9 +70,12 @@ const Basic = (props) => {
             <div className="item">
                 <p>Color</p>
                 <div className="itempos">
-                    <div className={context.color == "./images/gun/body/body_black.png" ? "item__color plate itemselect" : "item__color plate"} onClick={()=>handleClickColor('black')}></div>
-                    <div className={context.color == "./images/gun/body/body_blue.png" ? "item__color blue itemselect" : "item__color blue"}  onClick={()=>handleClickColor('blue')}></div>
-                    <div className={context.color == "./images/gun/body/body_gold.png" ? "item__color gold itemselect" : "item__color gold"}  onClick={()=>handleClickColor('gold')}></div>
+                    <div className="hoverimgb">
+                        <img src="./images/hoverselect2.png" className="imghover1" alt="" />
+                        <div className={context.color == "./images/gun/body/body_black.png" ? "item__color plate itemselect" : "item__color plate"} onMouseOver={() => handleHover(1)} onMouseOut={() => handleOut(1)} onClick={() => handleClickColor('black')}></div>
+                    </div>
+                    <div className={context.color == "./images/gun/body/body_blue.png" ? "item__color blue itemselect" : "item__color blue"} onClick={() => handleClickColor('blue')}></div>
+                    <div className={context.color == "./images/gun/body/body_gold.png" ? "item__color gold itemselect" : "item__color gold"} onClick={() => handleClickColor('gold')}></div>
                 </div>
             </div>
 
