@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Taller1webpro/static/css/main.68247741.chunk.css",
-    "main.js": "/Taller1webpro/static/js/main.100df8fa.chunk.js",
-    "main.js.map": "/Taller1webpro/static/js/main.100df8fa.chunk.js.map",
+    "main.js": "/Taller1webpro/static/js/main.9bfb375a.chunk.js",
+    "main.js.map": "/Taller1webpro/static/js/main.9bfb375a.chunk.js.map",
     "runtime-main.js": "/Taller1webpro/static/js/runtime-main.765fcd36.js",
     "runtime-main.js.map": "/Taller1webpro/static/js/runtime-main.765fcd36.js.map",
     "static/js/2.80e91631.chunk.js": "/Taller1webpro/static/js/2.80e91631.chunk.js",
     "static/js/2.80e91631.chunk.js.map": "/Taller1webpro/static/js/2.80e91631.chunk.js.map",
     "index.html": "/Taller1webpro/index.html",
-    "precache-manifest.50aaf7492b91868ff286bd44edfad23b.js": "/Taller1webpro/precache-manifest.50aaf7492b91868ff286bd44edfad23b.js",
+    "precache-manifest.75c0b84029ce6820378121f095db915f.js": "/Taller1webpro/precache-manifest.75c0b84029ce6820378121f095db915f.js",
     "service-worker.js": "/Taller1webpro/service-worker.js",
     "static/css/main.68247741.chunk.css.map": "/Taller1webpro/static/css/main.68247741.chunk.css.map",
     "static/js/2.80e91631.chunk.js.LICENSE.txt": "/Taller1webpro/static/js/2.80e91631.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.765fcd36.js",
     "static/js/2.80e91631.chunk.js",
     "static/css/main.68247741.chunk.css",
-    "static/js/main.100df8fa.chunk.js"
+    "static/js/main.9bfb375a.chunk.js"
   ]
 }
