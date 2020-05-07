@@ -54,7 +54,7 @@ const Accessories = (props) => {
             <div className="item">
                 <p>Opticas</p>
                 <div className="itemposacc__sitght">
-                    <div className={context.sight == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksight1}><img src="./images/gun/sight/stock.png" alt=""/></div>
+                    <div className={context.sight == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksight1}><img src="https://github.com/AndresQA/Taller1webpro/blob/gh-pages/images/gun/silencer/Stock.png?raw=true" alt=""/></div>
                     <div className={context.sight == "./images/gun/sight/sight2.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksight2}><img src="./images/gun/sight/sight2.png" alt=""/></div>
                     <div className={context.sight == "./images/gun/sight/sight3.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksight3}><img src="./images/gun/sight/sight3.png" alt=""/></div>
 
@@ -65,7 +65,7 @@ const Accessories = (props) => {
             <div className="item">
                 <p>Silenciadores</p>
                 <div className="itemposacc">
-                    <div className={context.silencer == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer1}><img src="/images/gun/silencer/stock.png" alt=""/></div>
+                    <div className={context.silencer == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer1}><img src="https://github.com/AndresQA/Taller1webpro/blob/gh-pages/images/gun/silencer/Stock.png?raw=true" alt=""/></div>
                     <div className={context.silencer == "./images/gun/silencer/silencer2.png animated bounceIn" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer2}><img src="./images/gun/silencer/silencer2.png" alt=""/></div>
                     <div className={context.silencer == "./images/gun/silencer/silencer3.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer3}><img src="./images/gun/silencer/silencer3.png" alt=""/></div>
 
