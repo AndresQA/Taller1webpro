@@ -66,7 +66,7 @@ const Accessories = (props) => {
                 <p>Silenciadores</p>
                 <div className="itemposacc">
                     <div className={context.silencer == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer1}><img src="https://github.com/AndresQA/Taller1webpro/blob/gh-pages/images/gun/silencer/Stock.png?raw=true" alt=""/></div>
-                    <div className={context.silencer == "./images/gun/silencer/silencer2.png animated bounceIn" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer2}><img src="./images/gun/silencer/silencer2.png" alt=""/></div>
+                    <div className={context.silencer == "./images/gun/silencer/silencer2.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer2}><img src="./images/gun/silencer/silencer2.png" alt=""/></div>
                     <div className={context.silencer == "./images/gun/silencer/silencer3.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclicksilencer3}><img src="./images/gun/silencer/silencer3.png" alt=""/></div>
 
                 </div>
