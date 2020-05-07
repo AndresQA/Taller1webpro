@@ -72,7 +72,7 @@ const Performance = (props) => {
                 <div className="itemposacc">
                     <div className={context.butt == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt1}><img src="/images/gun/butt/Stock.png" alt=""/></div>
                     <div className={context.butt == "./images/gun/butt/butt1.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt2}><img src="./images/gun/butt/butt1.png" alt=""/></div>
-                    <div className={context.butt == "./images/gun/butt/butt2.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt3}><img src="./images/gun/butt/butt2_black.png" alt=""/></div>
+                    <div className={context.butt == "./images/gun/butt/butt2_black.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt3}><img src="./images/gun/butt/butt2_black.png" alt=""/></div>
 
 
                 </div>

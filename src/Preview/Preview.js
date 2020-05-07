@@ -11,27 +11,43 @@ const Preview = () => {
 
     const context = React.useContext(Context);
     const history = useHistory();
-    
+
 
     const handleFinish = () => {
         context.handleFinish();
         history.push('/galery')
     };
-/*
-    const handleDownload = () => {
-        console.log('holla')
-        domtoimage.toBlob(document.getElementsByClassName('preview'))
-            .then(function (blob) {
-                window.saveAs(blob, 'my-node.png');
-            });
+
+    const handleHover = (index) => {
+
+        const node = document.querySelector(".imghover" + index)
+        node.classList.add('animated', 'fadeIn')
+
     }
-    */
+
+    const handleOut = (index) => {
+
+
+        const node = document.querySelector(".imghover" + index)
+        node.classList.remove('animated', 'fadeIn')
+
+
+    }
+    /*
+        const handleDownload = () => {
+            console.log('holla')
+            domtoimage.toBlob(document.getElementsByClassName('preview'))
+                .then(function (blob) {
+                    window.saveAs(blob, 'my-node.png');
+                });
+        }
+        */
 
 
     return <div id="armPrev">
         <div className="preview" >
-            <img src={context.color} className="preview_armbody" alt="" />
-            <img src={context.butt} className={context.classButt} alt="" />
+            <img src={context.color} className="preview_armbody"  alt="" />
+            <img src={context.butt} className={context.classButt} id="butanim" alt="" />
             <img src={'./images/gun/mag/mag' + context.mag + context.colorMag + '.png'} className="preview_mag" alt="" />
             <img src={context.handle} className="preview_handle" alt="" />
             <img src={context.barrelColor} className="preview_barrel" alt="" />
@@ -43,8 +59,18 @@ const Preview = () => {
         {/*<p onClick={handleEdit}>Edit</p> 
         <p onClick={handleDownload} className="">Descargar</p>
         */}
-        <Link to="/galery"><p onClick={handleFinish} className="finishbtn">Terminar</p>
-        </Link>
+        <div className="posbtn">
+
+            <div className="hoverimgprev">
+                <img src="./images/hoverselect.png" className="imghover1" alt="" />
+                <div className="hoverprop">
+                    <Link to="/galery">
+                        <p onClick={handleFinish} onMouseOver={() => handleHover(1)} onMouseOut={() => handleOut(1)} className="finishbtn">Terminar</p>
+                    </Link>
+                </div>
+            </div>
+        </div>
+
     </div>
 }
 

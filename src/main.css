@@ -95,6 +95,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
 .item {
@@ -233,7 +235,7 @@ a {
 }
 
 .itemposacc :hover {
-  border-color: red;
+  border-color: #fa3333;
   -webkit-transition: border-color 500ms linear;
   transition: border-color 500ms linear;
 }
@@ -336,16 +338,38 @@ a {
   position: absolute;
   color: white;
   font-size: 50px;
-  left: 30px;
-  bottom: 10px;
+  left: 60px;
+  bottom: 60px;
 }
 
 .finishbtn {
-  position: absolute;
   font-size: 50px;
-  right: 30px;
-  bottom: 10px;
   color: #c9ca18;
+}
+
+.hoverimgprev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hoverimgprev img {
+  position: absolute;
+  width: 250px;
+  opacity: 0;
+}
+
+.posbtn {
+  position: absolute;
+  right: 70px;
+  bottom: 60px;
 }
 
 .handlelast {

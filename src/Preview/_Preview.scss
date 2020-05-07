@@ -76,14 +76,36 @@ margin: auto;
     position: absolute;
     color: white;
     font-size: 50px;
-    left: 30px;
-    bottom: 10px;
+    left: 60px;
+    bottom: 60px;
 }
 
 .finishbtn{
-    position: absolute;
+
     font-size: 50px;
-    right: 30px;
-    bottom: 10px;
+ 
     color: #c9ca18;
+}
+
+
+.hoverimgprev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    position: relative;
+   & img{
+        position: absolute;
+        width: 250px;
+        opacity: 0;
+        
+   }
+      
+}
+
+.posbtn{
+    position: absolute;
+    right: 70px;
+    bottom: 60px;
 }
