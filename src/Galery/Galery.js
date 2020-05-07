@@ -11,7 +11,13 @@ const Galery = () => {
     const history = useHistory();
 
     const handleDeleteAll = () => {
-        context.setList([]);
+        const element = document.querySelector('.armavista');
+        element.classList.add('animated', 'zoomOut');
+
+        element.addEventListener('animationend', function () {
+            element.classList.remove('animated', 'zoomOut')
+            context.setList([]);
+        })
     }
 
     const handleArmDelete = (id) => {
@@ -35,6 +41,22 @@ const Galery = () => {
             ])
 
         })
+
+
+    }
+
+    const handleHover = (index) => {
+
+        const node = document.querySelector(".imghover" + index)
+        node.classList.add('animated', 'fadeIn')
+
+    }
+
+    const handleOut = (index) => {
+
+
+        const node = document.querySelector(".imghover" + index)
+        node.classList.remove('animated', 'fadeIn')
 
 
     }
@@ -69,32 +91,49 @@ const Galery = () => {
 
     return <div className="contentsArms">
 
-        <h1>Galeria</h1>
-
-        <Link to="/">
-            <h1>Volver</h1>
-        </Link>
-
-
-
-        {context.list.map(arm => {
-            return <div className={'armcreate'} id={arm.id}>
-                <p>{arm.name}</p>
-                <img className="btnDelete" onClick={() => handleArmDelete(arm.id)} src="./images/delete.png" alt="" />
-                <div className="armcreate__prev" onClick={() => handleArmEdit(arm.id)}>
-                    <img src={arm.color} className="preview_armbodyGalery" alt="" />
-                    <img src={arm.butt} className={arm.classButt + 'Galery'} alt="" />
-                    <img src={'./images/gun/mag/mag' + arm.mag + arm.colorMag+'.png'} className="preview_magGalery" alt="" />
-                    <img src={arm.handle} className="preview_handleGalery" alt="" />
-                    <img src={arm.barrelColor} className="preview_barrelGalery" alt="" />
-                    <img src={arm.silencer} className={arm.classSilencer + 'Galery'} alt="" />
-                    <img src={arm.sight} className={arm.classSight + 'Galery'} alt="" />
+        <h1 className="titulogalery">Galeria</h1>
+        <div className="posback">
+            <div className="hoverimggalery">
+                <img src="./images/hoverselect.png" className="imghover1" alt="" />
+                <div className="back">
+                    <Link to="/">
+                        <h1 onMouseOver={() => handleHover(1)} onMouseOut={() => handleOut(1)}>Volver</h1>
+                    </Link>
                 </div>
             </div>
-        })}
+
+        </div>
+
+
+        <div className="armavista">
+            {context.list.map(arm => {
+                return <div className={'armcreate animated fadeInDown delay-0.5s'} id={arm.id}>
+                    <p>{arm.name}</p>
+                    <img className="btnDelete" onClick={() => handleArmDelete(arm.id)} src="./images/delete.png" alt="" />
+                    <div className="armcreate__prev" onClick={() => handleArmEdit(arm.id)}>
+                        <img src={arm.color} className="preview_armbodyGalery" alt="" />
+                        <img src={arm.butt} className={arm.classButt + 'Galery'} alt="" />
+                        <img src={'./images/gun/mag/mag' + arm.mag + arm.colorMag + '.png'} className="preview_magGalery" alt="" />
+                        <img src={arm.handle} className="preview_handleGalery" alt="" />
+                        <img src={arm.barrelColor} className="preview_barrelGalery" alt="" />
+                        <img src={arm.silencer} className={arm.classSilencer + 'Galery'} alt="" />
+                        <img src={arm.sight} className={arm.classSight + 'Galery'} alt="" />
+                    </div>
+                </div>
+            })}
+
+        </div>
+
+        {context.list.length == 0 &&
+          <p>Vacio</p>
+
+        }
 
         {context.list.length > 0 &&
-            <p className="deleteall" onClick={handleDeleteAll}>Eliminar todas</p>
+            <div className="sectiondeleteall">
+                <p className="deleteall" onClick={handleDeleteAll}>Eliminar todas</p>
+
+            </div>
 
         }
 

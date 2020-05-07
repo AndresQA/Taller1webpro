@@ -57,9 +57,9 @@ const Performance = (props) => {
             <div className="item">
                 <p>Empuñaduras</p>
                 <div className="itemposacc">
-                    <div className={context.handle == "./images/gun/handle/handle1.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle1}><img src="./images/gun/handle/handle1.png" alt=""/></div>
-                    <div className={context.handle == "./images/gun/handle/handle2.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle2}><img src="./images/gun/handle/handle2.png" alt=""/></div>
-                    <div className={context.handle == "./images/gun/handle/handle3.png" ? "item__img itemselect" : "item__img"} onClick={handleclickhandle3}><img className="handlelast" src="./images/gun/handle/handle3.png" alt=""/></div>
+                    <div className={context.handle == "./images/gun/handle/handle1.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickhandle1}><img src="./images/gun/handle/handle1.png" alt=""/></div>
+                    <div className={context.handle == "./images/gun/handle/handle2.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickhandle2}><img src="./images/gun/handle/handle2.png" alt=""/></div>
+                    <div className={context.handle == "./images/gun/handle/handle3.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickhandle3}><img className="handlelast" src="./images/gun/handle/handle3.png" alt=""/></div>
 
 
 
@@ -70,9 +70,9 @@ const Performance = (props) => {
             <div className="item">
                 <p>Culatas</p>
                 <div className="itemposacc">
-                    <div className={context.butt == "" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt1}><img src="/images/gun/butt/Stock.png" alt=""/></div>
-                    <div className={context.butt == "./images/gun/butt/butt1.png" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt2}><img src="./images/gun/butt/butt1.png" alt=""/></div>
-                    <div className={context.butt == "./images/gun/butt/butt2.png" ? "item__img itemselect" : "item__img"} onClick={handleclickbutt3}><img src="./images/gun/butt/butt2_black.png" alt=""/></div>
+                    <div className={context.butt == "" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt1}><img src="/images/gun/butt/Stock.png" alt=""/></div>
+                    <div className={context.butt == "./images/gun/butt/butt1.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt2}><img src="./images/gun/butt/butt1.png" alt=""/></div>
+                    <div className={context.butt == "./images/gun/butt/butt2.png" ? "item__img itemselect animated bounceIn" : "item__img animated bounceIn"} onClick={handleclickbutt3}><img src="./images/gun/butt/butt2_black.png" alt=""/></div>
 
 
                 </div>

@@ -114,8 +114,8 @@ body {
 }
 
 .item__color {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -129,16 +129,25 @@ body {
       justify-content: space-around;
 }
 
+.itempos :hover {
+  border-color: red;
+  -webkit-transition: border-color 500ms linear;
+  transition: border-color 500ms linear;
+}
+
 .blue {
   background-color: blue;
+  border: solid 6px white;
 }
 
 .gold {
   background-color: gold;
+  border: solid 6px white;
 }
 
 .plate {
   background-color: #8b8b8b;
+  border: solid 6px white;
 }
 
 .inputName {
@@ -158,27 +167,9 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-.hoverimgb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.hoverimgb img {
-  position: absolute;
-  width: 150px;
-  opacity: 0;
-}
-
-.plate {
-  z-index: 1;
+.inputmag {
+  width: 100%;
+  background-color: red;
 }
 
 a {
@@ -374,6 +365,8 @@ a {
   text-align: center;
   margin: 20px 0px;
   position: relative;
+  -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
 .armcreate p {
@@ -482,6 +475,7 @@ a {
 }
 
 .deleteall {
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -495,5 +489,60 @@ a {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+.back {
+  height: auto;
+  color: white;
+  z-index: 1;
+}
+
+.back :hover {
+  color: #fff12b;
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  opacity: 1;
+}
+
+.sectiondeleteall {
+  color: white;
+  z-index: 1;
+}
+
+.sectiondeleteall :hover {
+  color: #fff12b;
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+
+.posback {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
+.hoverimggalery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hoverimggalery img {
+  position: absolute;
+  width: 180px;
+  opacity: 0;
+}
+
+.titulogalery {
+  margin-top: 65px;
 }
 /*# sourceMappingURL=main.css.map */

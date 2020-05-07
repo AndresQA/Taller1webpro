@@ -7,6 +7,9 @@
     text-align: center;
     margin: 20px 0px;
     position: relative;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 14px 0px rgba(0,0,0,0.75);
 
     & p{
         margin: 5px 0px;
@@ -112,7 +115,7 @@
 
 
 .deleteall{
-    
+    margin-top: 20px;
     cursor: pointer;
 
     & :hover{
@@ -126,4 +129,62 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.back{
+ 
+    height: auto;
+
+    color: white;
+    z-index: 1;
+
+    & :hover{
+        color: rgb(255, 241, 43);
+        -webkit-transition: color 200ms linear;
+        -ms-transition: color 200ms linear;
+        transition: color 200ms linear;
+
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        opacity: 1;
+
+    }
+}
+
+.sectiondeleteall{
+    color: white;
+    z-index: 1;
+
+    & :hover{
+        color: rgb(255, 241, 43);
+        -webkit-transition: color 200ms linear;
+        -ms-transition: color 200ms linear;
+        transition: color 200ms linear;
+    }
+}
+
+.posback{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+
+.hoverimggalery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    position: relative;
+   & img{
+        position: absolute;
+        width: 180px;
+        opacity: 0;
+        
+   }
+      
+}
+.titulogalery{
+    margin-top: 65px;
 }
